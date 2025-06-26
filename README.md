@@ -1,4 +1,4 @@
-# Memory Game Nuxt 3 + TailwindCSS
+# Memory Game
 
 Un jeu de mémoire moderne et responsive développé avec Nuxt 3 et TailwindCSS.
 
@@ -8,13 +8,19 @@ Un jeu de mémoire moderne et responsive développé avec Nuxt 3 et TailwindCSS.
 - Plateau de jeu animé et design
 - Compteur de coups et meilleur score (localStorage)
 - Responsive et accessible
-- Footer personnalisé sur toutes les pages
 - Fond animé sur tout le site
 
 ## 🚀 Installation
 
+Si tu viens de cloner le dépôt, place-toi dans le dossier du projet :
+
 ```bash
 cd memory-game
+```
+
+Si tu es déjà dans le dossier, passe directement à l'installation des dépendances :
+
+```bash
 npm install
 ```
 
