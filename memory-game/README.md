@@ -1,75 +1,49 @@
-# Nuxt Minimal Starter
+# Memory Game Nuxt 3 + TailwindCSS
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Un jeu de mémoire moderne et responsive développé avec Nuxt 3 et TailwindCSS.
 
-## Setup
+## ✨ Fonctionnalités
 
-Make sure to install dependencies:
+- Sélection du niveau (Facile, Moyen, Difficile)
+- Plateau de jeu animé et design
+- Compteur de coups et meilleur score (localStorage)
+- Responsive et accessible
+- Footer personnalisé sur toutes les pages
+- Fond animé sur tout le site
+
+## 🚀 Installation
 
 ```bash
-# npm
+cd memory-game
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## 🏃‍♂️ Lancer le projet en développement
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
 
-Build the application for production:
+## 🛠️ Structure du projet
 
-```bash
-# npm
-npm run build
+- `pages/` : Pages Nuxt (accueil, jeu)
+- `components/MemoryBoard.vue` : Plateau de jeu dynamique
+- `components/AppFooter.vue` : Footer global
+- `assets/css/tailwind.css` : Entrée CSS Tailwind
+- `tailwind.config.js` : Configuration Tailwind
+- `nuxt.config.ts` : Configuration Nuxt et PostCSS
 
-# pnpm
-pnpm build
+## 🎨 Personnalisation
 
-# yarn
-yarn build
+- Les couleurs et animations sont modifiables dans `tailwind.config.js` et les fichiers `.vue`.
+- Les emojis des cartes sont dans `MemoryBoard.vue`.
 
-# bun
-bun run build
-```
+## 👩‍💻 Auteur
 
-Locally preview production build:
+Développé avec ❤️ par [Sarah T](https://github.com/SarahTld)
 
-```bash
-# npm
-npm run preview
+---
 
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+> Memory Game - Nuxt 3 & TailwindCSS - 2025
