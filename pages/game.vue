@@ -5,20 +5,12 @@
       <div class="absolute w-96 h-96 bg-pink-400 opacity-30 rounded-full blur-3xl top-[-10%] left-[-10%] animate-pulse"></div>
       <div class="absolute w-80 h-80 bg-indigo-400 opacity-20 rounded-full blur-2xl bottom-[-10%] right-[-10%] animate-pulse"></div>
     </div>
-    <template v-if="level === 'easy'">
-      <h1 class="z-10 text-3xl sm:text-4xl font-extrabold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-400 drop-shadow-lg text-center animate-gradient-x">
-        Niveau : {{ levelLabel }}
-      </h1>
-      <div class="z-10 mb-2">
-        <NuxtLink to="/" class="text-purple-500 hover:underline">Retour à l'accueil</NuxtLink>
-      </div>
-    </template>
-    <template v-else>
-      <div class="z-10 mt-8 mb-4 flex items-center gap-4">
-        <span class="px-4 py-2 rounded-full text-lg font-bold bg-gradient-to-r from-purple-500 to-pink-400 text-white shadow-lg border-2 border-white/60 drop-shadow">Niveau : {{ levelLabel }}</span>
-        <NuxtLink to="/" class="text-purple-500 hover:underline ml-2">Retour à l'accueil</NuxtLink>
-      </div>
-    </template>
+    <h1 class="z-10 text-3xl sm:text-4xl font-extrabold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-400 drop-shadow-lg text-center animate-gradient-x">
+      Niveau : {{ levelLabel }}
+    </h1>
+    <div class="z-10 mb-2">
+      <NuxtLink to="/" class="text-purple-500 hover:underline">Retour à l'accueil</NuxtLink>
+    </div>
     <div class="w-full max-w-2xl">
       <MemoryBoard :level="level" />
     </div>
