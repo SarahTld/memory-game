@@ -9,10 +9,14 @@
       <NuxtRouteAnnouncer />
       <NuxtPage />
     </div>
-    <AppFooter />
+    <AppFooter v-if="isHomePage" />
   </div>
 </template>
 
 <script setup lang="ts">
 import AppFooter from '@/components/AppFooter.vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const isHomePage = computed(() => route.path === '/')
 </script>
